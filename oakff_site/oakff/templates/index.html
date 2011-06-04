@@ -1,9 +1,24 @@
-<!doctype html>
-<html>
-    <head>
-        <title>{{ message }}</title>
-    </head>
-    <body>
-        <h1>{{ message }}</h1>
-    </body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+<div id="left">
+    <form action="result">
+        <label for="search">I want a:</label>
+        <input name="search" value="Tomato"/>
+        </br>
+        <label for="location">Near:</label>
+        <input name="location" value="1416 Alice St."/> </br>
+        <input type="submit" name="submit" value="Go!" />
+    </form>
+    </div>
+    <div id ="right">
+        <p>Have a taste for tomatoes?</p>
+        <p>Want to share your squash?</p>
+        <p>Don’t know where to go?</p>
+
+        <p>The Oakland Food Finder connects local people with local food.</p>
+
+        <p>Search markets and urban farms around you for the specific fruits, vegetables, and other groceries you want. Enter a kind of food (“eggs” for example) and an address to get started.</p>
+
+        <p>Are you a local food producer? Share information about what you have available.</p>
+    </div>
+{% endblock %}

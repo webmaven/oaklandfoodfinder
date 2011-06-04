@@ -1,0 +1,31 @@
+body {
+    font-family: 'Vollkorn', arial, serif;
+    text-align: center;}
+#main {
+    margin: 2em auto;
+    width: 900px;
+    border: 1 px solid black;}
+h1 {font-family: 'Ultra', arial, serif;
+    font-weight: normal;}
+
+#left {
+    float: left;
+    padding: 1em;
+    width: 350px;
+    height: 200px;
+    margin: 1em;
+    border: 1px solid brown;
+}
+
+#left form label {
+    clear: both;
+}
+
+#right {
+    float: right;
+    text-align: left;
+    padding: 1em;
+    width: 400px;
+    margin: 1em;
+    border: 1px solid brown;
+}
