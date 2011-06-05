@@ -1,18 +1,36 @@
 {% extends "base.html" %}
 {% block content %}
 <h2>results</h2>
+<div id="controls">
+    <img src="{{ STATIC_URL }}images/map.jpg" />
+    <form>
+        <label for="local">Local:</label>
+        <input name="local" type="checkbox" value="yes" /></br>
+        <label for="organic">Organic:</label>
+        <input type="checkbox" name="organic" /></br>
+        <label for="fair">Fair Trade</label>
+        <input type="checkbox" name="fair" /></br>
+    </form>
+    <h3>Create an alert for this search:</h3>
+    <form>
+        <label for="alert">Phone or Email:</label>
+        <input name="alert" value="" />
+        <input type="submit" name="submit" value="Get Alerts" />
+    </form>
+</div>
+<div id="listings">
 <p>You searched for "tomatoes" near "1461 Alice Street Oakland"</p>
 <p>Sort by <u><b>goodness</b></u>, <u>distance</u>, <u>cost</u></p>
-<h3>Jennifer Smith<h3>
+<h3>Jennifer Smith</h3>
 <p>1431 Jackson Street, Oakland</p>
 <p>Locally owned, organic, last verified 5/28/11</p>
 
 <h3>Old Oakland Farmer's Market</h3>
 <p>350 10th Street, Oakland</p>
-<p>Locally owned, last verified 4/30/11</p>
+<p>Locally owned (Thursdays only), last verified 4/30/11</p>
 
 <h3>Lakeside Market</h3>
 <p>300 14th Street, Oakland</p>
 <p>Locally owned, union operated, last verified 2/1/11</p>
-
+</div>
 {% endblock %}

@@ -1,12 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
 <div id="left">
-    <form action="result">
+    <form action="result" method="post">
+        {% csrf_token %}
         <label for="search">I want a:</label>
-        <input name="search" value="Tomato"/>
+        <input name="search" value="Tomatoes"/>
         </br>
         <label for="location">Near:</label>
-        <input name="location" value="1416 Alice St."/> </br>
+        <input name="location" value="1416 Alice St. Oakland"/> </br>
         <input type="submit" name="submit" value="Go!" />
     </form>
     </div>

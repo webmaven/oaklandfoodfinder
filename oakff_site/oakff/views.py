@@ -9,3 +9,9 @@ def index(request):
         'message': 'Hello World!',
     })
     return HttpResponse(t.render(c))
+
+def result(request):
+    t = loader.get_template('result.html')
+    c = RequestContext(request, {
+    })
+    return HttpResponse(t.render(c))

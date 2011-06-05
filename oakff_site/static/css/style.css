@@ -4,15 +4,15 @@ body {
 #main {
     margin: 2em auto;
     width: 900px;
-    border: 1 px solid black;}
-h1 {font-family: 'Ultra', arial, serif;
+    height: 100%;
+}
+h1, h2 {font-family: 'Ultra', arial, serif;
     font-weight: normal;}
-
-#left {
+h1 a {text-decoration: none; color: black;}
+#left, #controls {
     float: left;
     padding: 1em;
     width: 350px;
-    height: 200px;
     margin: 1em;
     border: 1px solid brown;
 }
@@ -21,11 +21,19 @@ h1 {font-family: 'Ultra', arial, serif;
     clear: both;
 }
 
-#right {
+#right, #listings {
     float: right;
     text-align: left;
     padding: 1em;
     width: 400px;
     margin: 1em;
     border: 1px solid brown;
+}
+
+#controls {
+    width: 200px;
+}
+
+#listings {
+    width: 550px;
 }
